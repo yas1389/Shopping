@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart store</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e3e62;
+            /* font-family: "Vazirmatn", sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            direction: rtl;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin: 40px 0px;
+            font-weight: bold;
+        }
+
+        .product-card {
+            background-color: #0b192c;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: #fff;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background-color: #1e3e62;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff6500;
+        }
+
+        .discount-badge {
+            background-color: #ff6500;
+            color: #fff;
+            font-weight: bold;
+            padding: 6px 10px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #ccc;
+            margin-left: 10px;
+        }
+
+        .new-price {
+            color: #ff6500;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+
+
+        .navbar {
+            background: #ff6500 !important;
+            box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-shopping-bag me-2"></i>
+                اسمارت‌استور
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">محصولات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+                    </li>
+                    <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <h2>موبايل ها</h2>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/1.webp" class="card-img-top" alt="Sony Xperia 1 V Premium">
+                    <div class="card-body">
+                        <h5 class="card-title">Sony Xperia 1 V Premium</h5>
+                        <p class="card-text">گوشي ويژه سوني با صفحه نمايش 4K OLED، دوربين‌هاي بسيار حرفه‌اي و پردازنده
+                            Snapdragon 8 Gen 2.</p>
+                        <div class="price">
+                            <span class="old-price">74 ميليون تومان</span>
+                            <span class="new-price">56 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/2.jpeg" class="card-img-top"
+                        alt="Samsung Galaxy Z Fold 5 1TB (Titanium Edition)">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Z Fold 5 1TB (Titanium Edition)</h5>
+                        <p class="card-text">نسخه ويژه با بدنه تيتانيومي و نمايشگر 7.6 اينچي انعطاف‌پذير، قدرت پردازشي
+                            بالا.</p>
+                        <div class="price">
+                            <span class="old-price">98 ميليون تومان</span>
+                            <span class="new-price">76 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/3.jpeg" class="card-img-top" alt="Samsung Galaxy S24 Ultra 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy S24 Ultra 1TB</h5>
+                        <p class="card-text">جديدترين سامسونگ بادوربين 200مگاپيکسلي، صفحه نمايش Dynamic AMOLED 2X.</p>
+                        <div class="price">
+                            <span class="old-price">88 ميليون تومان</span>
+                            <span class="new-price">68 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/4.jpeg" class="card-img-top" alt="Huawei Mate 60 RS Porsche Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Huawei Mate 60 RS Porsche Design</h5>
+                        <p class="card-text">گوشي لوکس با طراحي خاص پورشه، دوربين‌هاي عالي و سخت‌افزار فوق‌پيشرفته.</p>
+                        <div class="price">
+                            <span class="old-price">92 ميليون تومان</span>
+                            <span class="new-price">72 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/5.jpeg" class="card-img-top" alt="iPhone 15 Ultra Max 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 15 Ultra Max 1TB</h5>
+                        <p class="card-text">جديدترين پرچم‌دار اپل با طراحي بسيار پيشرفته، تراشه A17 Pro Max و
+                            دوربين‌هاي حرفه‌اي.</p>
+                        <div class="price">
+                            <span class="old-price">78 ميليون تومان</span>
+                            <span class="new-price">60 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/6.jpg" class="card-img-top" alt="Samsung Galaxy Z Flip 5 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Z Flip 5 1TB</h5>
+                        <p class="card-text">نسخه 1 ترابايتي با صفحه نمايش 6.7 اينچي تاشو و طراحي جمع‌وجور.</p>
+                        <div class="price">
+                            <span class="old-price">72.5 ميليون تومان</span>
+                            <span class="new-price">56 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/7.jpeg" class="card-img-top" alt="Asus ROG Phone 8 ">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus ROG Phone 8 </h5>
+                        <p class="card-text">صفحه نمايش 165 هرتزي، باتري 6000 ميلي‌آمپر و سيستم خنک‌کننده پيشرفته.</p>
+                        <div class="price">
+                            <span class="old-price">66 ميليون تومان</span>
+                            <span class="new-price">52 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/8.webp" class="card-img-top" alt="iPhone 14 Pro Max 2TB">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 14 Pro Max 2TB</h5>
+                        <p class="card-text">نسخه2ترابايتي‌از iPhone 14 Pro Max با دوربين 48 مگاپيکسلي و صفحه نمايش
+                            هميشه روشن.</p>
+                        <div class="price">
+                            <span class="old-price">73 ميليون تومان</span>
+                            <span class="new-price">56 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/9.jpg" class="card-img-top" alt="Google Pixel 8 Pro 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Google Pixel 8 Pro 1TB</h5>
+                        <p class="card-text">بهترين تجربه اندرويد با دوربين‌هاي هوشمند، تراشه Tensor G3 و نمايشگر LTPO
+                            OLED.</p>
+                        <div class="price">
+                            <span class="old-price">62 ميليون تومان</span>
+                            <span class="new-price">48 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/10.jpg" class="card-img-top" alt="Oppo Find N2 Flip 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Oppo Find N2 Flip 1TB</h5>
+                        <p class="card-text">گوشي تاشو Oppo با نمايشگر 6.8 اينچي تاشو، طراحي خاص و دوربين‌هاي بسيار
+                            باکيفيت.</p>
+                        <div class="price">
+                            <span class="old-price">87 ميليون تومان</span>
+                            <span class="new-price">68 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/11.jpg" class="card-img-top" alt="Motorola Edge+ (2023) 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Motorola Edge+ (2023) 1TB</h5>
+                        <p class="card-text">گوشي پرچم‌دار موتورولا با صفحه نمايش 144 هرتزي و دوربين 200 مگاپيکسلي.</p>
+                        <div class="price">
+                            <span class="old-price">57.5 ميليون تومان</span>
+                            <span class="new-price">44 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/12.jpg" class="card-img-top" alt="Xiaomi Mi Mix Fold 2 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Xiaomi Mi Mix Fold 2 1TB</h5>
+                        <p class="card-text">گوشي تاشو با نمايشگر 8.02 اينچي، دوربين‌هاي حرفه‌اي و طراحي شيک.</p>
+                        <div class="price">
+                            <span class="old-price">82 ميليون تومان</span>
+                            <span class="new-price">64 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/13.jpeg" class="card-img-top" alt="Nubia Red Magic 8 Pro+">
+                    <div class="card-body">
+                        <h5 class="card-title">Nubia Red Magic 8 Pro+</h5>
+                        <p class="card-text">گوشي مخصوص بازي با سيستم خنک‌کننده و صفحه نمايش 120 هرتزي.</p>
+                        <div class="price">
+                            <span class="old-price">57 ميليون تومان</span>
+                            <span class="new-price">44 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/14.jpeg" class="card-img-top" alt="Realme GT 2 Pro 5G 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Realme GT 2 Pro 5G 1TB</h5>
+                        <p class="card-text">پردازنده Snapdragon 8 Gen 2، صفحه نمايش 120 هرتزي و دوربين 50 مگاپيکسلي.
+                        </p>
+                        <div class="price">
+                            <span class="old-price">62 ميليون تومان</span>
+                            <span class="new-price">48 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/15.webp" class="card-img-top" alt="Vivo X90 Pro+ 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Vivo X90 Pro+ 1TB</h5>
+                        <p class="card-text">دوربين‌هاي Leica، پردازنده Snapdragon 8 Gen 3 و نمايشگر 120 هرتزي.</p>
+                        <div class="price">
+                            <span class="old-price">78 ميليون تومان</span>
+                            <span class="new-price">60 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/16.png" class="card-img-top" alt="Sony Xperia 1 V Premium Edition">
+                    <div class="card-body">
+                        <h5 class="card-title">Sony Xperia 1 V Premium Edition</h5>
+                        <p class="card-text">پردازنده Snapdragon 8و دوربين‌هاي حرفه‌اي.</p>
+                        <div class="price">
+                            <span class="old-price">85 ميليون تومان</span>
+                            <span class="new-price">64 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/17.jpg" class="card-img-top" alt="Xiaomi 14 Ultra 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Xiaomi 14 Ultra 1TB</h5>
+                        <p class="card-text">دوربين Leica با سنسورهاي پيشرفته، نمايشگر 120 هرتزي و پردازنده Snapdragon 8
+                            Gen 3.</p>
+                        <div class="price">
+                            <span class="old-price">68.5 ميليون تومان</span>
+                            <span class="new-price">52 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/18.jpeg" class="card-img-top" alt="iPhone 16 Pro Max 2TB">
+                    <div class="card-body">
+                        <h5 class="card-title">iPhone 16 Pro Max 2TB</h5>
+                        <p class="card-text">نسخه 2 ترابايتي با جديدترين پردازنده A18 Bionic و دوربين‌هاي 72 مگاپيکسلي.
+                        </p>
+                        <div class="price">
+                            <span class="old-price">98 ميليون تومان</span>
+                            <span class="new-price">76 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/19.jpg" class="card-img-top" alt="Samsung Galaxy Z Fold 6 1TB">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Z Fold 6 1TB</h5>
+                        <p class="card-text">نسخه پيشرفته‌تر از Galaxy Z Fold با ويژگي‌هاي بيشتر و بهبود عملکرد.</p>
+                        <div class="price">
+                            <span class="old-price">105 ميليون تومان</span>
+                            <span class="new-price">80 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/mobile/20.webp" class="card-img-top" alt="Huawei P70 Pro+">
+                    <div class="card-body">
+                        <h5 class="card-title">Huawei P70 Pro+</h5>
+                        <p class="card-text">گوشي فوق‌پيشرفته با دوربين‌هاي 200 مگاپيکسلي، صفحه نمايش 120 هرتزي.</p>
+                        <div class="price">
+                            <span class="old-price">98.5 ميليون تومان</span>
+                            <span class="new-price">76 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

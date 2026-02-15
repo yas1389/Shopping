@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart store</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e3e62;
+            /* font-family: "Vazirmatn", sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            direction: rtl;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin: 40px 0px;
+            font-weight: bold;
+        }
+
+        .product-card {
+            background-color: #0b192c;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: #fff;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background-color: #1e3e62;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff6500;
+        }
+
+        .discount-badge {
+            background-color: #ff6500;
+            color: #fff;
+            font-weight: bold;
+            padding: 6px 10px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #ccc;
+            margin-left: 10px;
+        }
+
+        .new-price {
+            color: #ff6500;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+
+
+        .navbar {
+            background: #ff6500 !important;
+            box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-shopping-bag me-2"></i>
+                اسمارت‌استور
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">محصولات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+                    </li>
+                    <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <h2>لپ‌تاپ‌ ها</h2>
+
+
+        <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/1.jpeg" class="card-img-top" alt="Apple MacBook Pro 16 M2 Max">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple MacBook Pro 16 M2 Max</h5>
+                        <p class="card-text">پردازنده M2 Max با 32 هسته پردازشي، صفحه نمايش Liquid Retina XDR، مناسب
+                            براي کارهاي حرفه‌اي طراحي و توليد محتوا.</p>
+                        <div class="price">
+                            <span class="old-price">120 ميليون تومان</span>
+                            <span class="new-price">96 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/2.jpeg" class="card-img-top" alt="Razer Blade 18 (i9 & RTX 4090)">
+                    <div class="card-body">
+                        <h5 class="card-title">Razer Blade 18 (i9 & RTX 4090)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ پيشرفته با پردازنده Intel Core i9 و کارت گرافيک RTX 4090.
+                            مناسب براي بازي و کارهاي گرافيکي سنگين.</p>
+                        <div class="price">
+                            <span class="old-price">125 ميليون تومان</span>
+                            <span class="new-price">100 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/3.jpeg" class="card-img-top" alt="Dell Alienware X17 (i9 & RTX 3080)">
+                    <div class="card-body">
+                        <h5 class="card-title">Dell Alienware X17 (i9 & RTX 3080)</h5>
+                        <p class="card-text">طراحي بسيار جذاب، پردازنده i9 و کارت گرافيک RTX 3080، مناسب براي بازي‌هاي
+                            حرفه‌اي و نرم‌افزارهاي گرافيکي.</p>
+                        <div class="price">
+                            <span class="old-price">110 ميليون تومان</span>
+                            <span class="new-price">88 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/4.jpeg" class="card-img-top" alt="Lenovo Legion 7i (i9 & RTX 3080)">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo Legion 7i (i9 & RTX 3080)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ و حرفه‌اي با پردازنده i9 و کارت گرافيک RTX 3080. مناسب براي
+                            گيمينگ و ويرايش ويديو.</p>
+                        <div class="price">
+                            <span class="old-price">120 ميليون تومان</span>
+                            <span class="new-price">96 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/5.jpeg" class="card-img-top" alt="MSI Titan GT77 (i9 & RTX 3080 Ti)">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI Titan GT77 (i9 & RTX 3080 Ti)</h5>
+                        <p class="card-text">قدرتمندترين لپ‌تاپ گيمينگ با پردازنده Intel Core i9 و کارت گرافيک RTX 3080
+                            Ti. مناسب براي کارهاي گرافيکي سنگين و بازي‌هاي 4K.</p>
+                        <div class="price">
+                            <span class="old-price">135 ميليون تومان</span>
+                            <span class="new-price">108 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/6.jpeg" class="card-img-top" alt="Apple MacBook Pro 14 M2 Max">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple MacBook Pro 14 M2 Max</h5>
+                        <p class="card-text">پردازنده M2 Max با عملکرد عالي در زمينه توليد محتوا و برنامه‌نويسي. نمايشگر
+                            Liquid Retina XDR و عمر باتري بسيار بالا.</p>
+                        <div class="price">
+                            <span class="old-price">115 ميليون تومان</span>
+                            <span class="new-price">92 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/7.jpeg" class="card-img-top" alt="Gigabyte Aero 17 (i9 & RTX 3080)">
+                    <div class="card-body">
+                        <h5 class="card-title">Gigabyte Aero 17 (i9 & RTX 3080)</h5>
+                        <p class="card-text">لپ‌تاپ مخصوص طراحي و گرافيک با پردازنده i9 و کارت گرافيک RTX 3080. مناسب
+                            براي کارهاي مهندسي و توليد محتوا.</p>
+                        <div class="price">
+                            <span class="old-price">120 ميليون تومان</span>
+                            <span class="new-price">96 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/8.jpeg" class="card-img-top" alt="Lenovo ThinkPad P1 Gen 5 (Intel Xeon)">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo ThinkPad P1 Gen 5 (Intel Xeon)</h5>
+                        <p class="card-text">لپ‌تاپ ورک‌استيشن حرفه‌اي با پردازنده Intel Xeon و کارت گرافيک NVIDIA RTX
+                            A5000. براي کارهاي طراحي و محاسبات سنگين.</p>
+                        <div class="price">
+                            <span class="old-price">115 ميليون تومان</span>
+                            <span class="new-price">92 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/9.jpeg" class="card-img-top" alt="HP ZBook Fury 17 G8 (Xeon & RTX A5000)">
+                    <div class="card-body">
+                        <h5 class="card-title">HP ZBook Fury 17 G8 (Xeon & RTX A5000)</h5>
+                        <p class="card-text">ورک‌استيشن قابل حمل با پردازنده Xeon و کارت گرافيک NVIDIA RTX A5000، براي
+                            حرفه‌اي‌ها در حوزه مهندسي و گرافيک.</p>
+                        <div class="price">
+                            <span class="old-price">130 ميليون تومان</span>
+                            <span class="new-price">104 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/10.jpeg" class="card-img-top" alt="MSI GE76 Raider (i9 & RTX 3080)">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI GE76 Raider (i9 & RTX 3080)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ با پردازنده Intel Core i9 و کارت گرافيک RTX 3080. مناسب براي
+                            بازي‌هاي پيشرفته و ويرايش ويديو.</p>
+                        <div class="price">
+                            <span class="old-price">120 ميليون تومان</span>
+                            <span class="new-price">96 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/11.jpeg" class="card-img-top"
+                        alt="Asus ROG Strix Scar 17 (i9 & RTX 3080)">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus ROG Strix Scar 17 (i9 & RTX 3080)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ با پردازنده i9 و کارت گرافيک RTX 3080. مناسب براي گيمينگ و
+                            ويرايش ويديو با کيفيت بالا.</p>
+                        <div class="price">
+                            <span class="old-price">130 ميليون تومان</span>
+                            <span class="new-price">104 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/12.jpeg" class="card-img-top"
+                        alt="Asus ProArt StudioBook 16 OLED (i9 & RTX 3070)">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus ProArt StudioBook 16 OLED (i9 & RTX 3070)</h5>
+                        <p class="card-text">لپ‌تاپ مخصوص طراحان و گرافيست‌ها با پردازنده i9 و کارت گرافيک RTX 3070.
+                            نمايشگر OLED براي رنگ‌هاي دقيق.</p>
+                        <div class="price">
+                            <span class="old-price">125 ميليون تومان</span>
+                            <span class="new-price">100 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/13.jpeg" class="card-img-top"
+                        alt="Razer Blade 15 Advanced (i9 & RTX 3080 Ti)">
+                    <div class="card-body">
+                        <h5 class="card-title">Razer Blade 15 Advanced (i9 & RTX 3080 Ti)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ با پردازنده Intel Core i9 و کارت گرافيک RTX 3080 Ti. مناسب
+                            براي بازي‌هاي 4K و طراحي گرافيکي.</p>
+                        <div class="price">
+                            <span class="old-price">120 ميليون تومان</span>
+                            <span class="new-price">96 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/14.jpeg" class="card-img-top" alt="Asus ROG Zephyrus Duo 16">
+                    <div class="card-body">
+                        <h5 class="card-title">Asus ROG Zephyrus Duo 16</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ با دو نمايشگر، پردازنده Ryzen 9 و کارت گرافيک RTX 3080 Ti.
+                            براي کاربران حرفه‌اي بازي و طراحي.</p>
+                        <br>
+                        <div class="price">
+                            <span class="old-price">130 ميليون تومان</span>
+                            <span class="new-price">104 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/15.jpeg" class="card-img-top" alt="HP Omen 17 (i9 & RTX 3080 Ti)">
+                    <div class="card-body">
+                        <h5 class="card-title">HP Omen 17 (i9 & RTX 3080 Ti)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ با پردازنده i9 و کارت گرافيک RTX 3080 Ti. براي تجربه بازي با
+                            کيفيت بالا و کارهاي گرافيکي سنگين.</p>
+                        <div class="price">
+                            <span class="old-price">125 ميليون تومان</span>
+                            <span class="new-price">100 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/16.png" class="card-img-top" alt="Gigabyte AORUS 15G (i9 & RTX 3080)">
+                    <div class="card-body">
+                        <h5 class="card-title">Gigabyte AORUS 15G (i9 & RTX 3080)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ با پردازنده i9 و کارت گرافيک RTX 3080. مناسب براي گيمينگ و
+                            کارهاي طراحي پيشرفته.</p>
+                        <div class="price">
+                            <span class="old-price">115 ميليون تومان</span>
+                            <span class="new-price">92 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/17.png" class="card-img-top" alt="Alienware m15 R7 (i9 & RTX 3070)">
+                    <div class="card-body">
+                        <h5 class="card-title">Alienware m15 R7 (i9 & RTX 3070)</h5>
+                        <p class="card-text">لپ‌تاپ گيمينگ با پردازنده i9 و کارت گرافيک RTX 3070. طراحي سبک و کاراي
+                            بالا.</p>
+                        <div class="price">
+                            <span class="old-price">115 ميليون تومان</span>
+                            <span class="new-price">92 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/18.png" class="card-img-top" alt="Dell XPS 17 (i9 & RTX 3080)">
+                    <div class="card-body">
+                        <h5 class="card-title">Dell XPS 17 (i9 & RTX 3080)</h5>
+                        <p class="card-text">لپ‌تاپ حرفه‌اي با پردازنده i9 و کارت گرافيک RTX 3080. مناسب براي کارهاي
+                            گرافيکي، طراحي و برنامه‌نويسي.</p>
+                        <div class="price">
+                            <span class="old-price">125 ميليون تومان</span>
+                            <span class="new-price">100 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/19.png" class="card-img-top" alt="Apple MacBook Pro 13 M2 Max">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple MacBook Pro 13 M2 Max</h5>
+                        <p class="card-text">پردازنده M2 Max و نمايشگر Liquid Retina براي کارهاي حرفه‌اي طراحي و توليد
+                            محتوا.</p>
+                        <div class="price">
+                            <span class="old-price">125 ميليون تومان</span>
+                            <span class="new-price">100 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/laptop/20.png" class="card-img-top" alt="MacBook Pro 16 M1 Max">
+                    <div class="card-body">
+                        <h5 class="card-title">MacBook Pro 16 M1 Max</h5>
+                        <p class="card-text">پردازنده M1 Max، نمايشگر Liquid Retina XDR و عمر باتري فوق‌العاده براي
+                            کارهاي سنگين مانند ويرايش ويديو.</p>
+                        <div class="price">
+                            <span class="old-price">130 ميليون تومان</span>
+                            <span class="new-price">104 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

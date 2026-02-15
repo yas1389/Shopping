@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smart store</title>
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0b192c;
+      color: #fff;
+      /* font-family: 'Vazir', sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+
+    .text-orange {
+      color: #ff6500;
+    }
+
+    .section-title {
+      color: #ff6500;
+      font-weight: 800;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+
+    .btn-orange {
+      background-color: #ff6500;
+      color: #fff;
+      border-radius: 10px;
+      padding: 12px 25px;
+      transition: 0.3s;
+    }
+
+
+    .btn-orange:hover {
+      background-color: #1e3e62;
+      color: #ff6500;
+      border: 1px solid #ff6500;
+    }
+
+
+    .card-modern {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 101, 0, 0.4);
+      border-radius: 20px;
+      padding: 25px;
+      transition: 0.4s;
+      backdrop-filter: blur(8px);
+    }
+
+
+    .card-modern:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(255, 101, 0, 0.4);
+    }
+
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 40px;
+      border: 1px solid rgba(255, 101, 0, 0.4);
+    }
+
+
+    .contact-form input,
+    .contact-form textarea {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border: 1px solid #ff6500;
+      box-shadow: 0 0 10px rgba(255, 101, 0, 0.5);
+    }
+
+
+    .contact-form button {
+      background-color: #ff6500;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 25px;
+      transition: 0.3s;
+    }
+
+
+    .contact-form button:hover {
+      background-color: #1e3e62;
+      color: #ff6500;
+      border: 1px solid #ff6500;
+    }
+
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 101, 0, 0.4);
+      padding: 30px;
+      transition: 0.4s;
+      height: 100%;
+    }
+
+
+    .info-box:hover {
+      box-shadow: 0 8px 30px rgba(255, 101, 0, 0.3);
+      transform: translateY(-4px);
+    }
+
+
+    .social-icons i {
+      font-size: 2rem;
+      margin: 10px;
+      color: #ff6500;
+      transition: 0.3s;
+    }
+
+
+    .social-icons i:hover {
+      color: #fff;
+      transform: scale(1.2);
+    }
+
+
+
+    .navbar {
+      background: #ff6500 !important;
+      box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: white !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: white !important;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <i class="fas fa-shopping-bag me-2"></i>
+        اسمارت‌استور
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">خانه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">محصولات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+          </li>
+          <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="text-center py-5">
+    <div class="container py-5">
+      <h1 class="fw-bold">با ما در ارتباط باشيد</h1>
+      <p class="mt-3">ما هميشه آماده شنيدن صداي شما هستيم — چه انتقاد، پيشنهاد يا همکاري!</p>
+      <div class="mt-4">
+        <a href="#contact-form" class="btn btn-orange mx-2">ارسال پيام</a>
+        <a href="" class="btn btn-outline-light mx-2"><i class="fa-solid fa-phone"></i> تماس مستقيم</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5 text-center">
+    <h2 class="section-title">چطور با ما در تماس باشيد؟</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="card-modern h-100">
+          <i class="fa-solid fa-headset fa-3x text-orange mb-3"></i>
+          <h5>پشتيباني ۲۴ ساعته</h5>
+          <p>تيم پشتيباني ما هميشه آماده پاسخ‌گوي به سوالات و رفع مشکلات شماست — هر روز هفته!</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card-modern h-100">
+          <i class="fa-solid fa-envelope fa-3x text-orange mb-3"></i>
+          <h5>ارسال ايميل</h5>
+          <p>هر زمان بخواهيد، مي‌توانيد از طريق ايميل با ما در ارتباط باشيد و پاسخ دريافت کنيد.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card-modern h-100">
+          <i class="fa-solid fa-location-dot fa-3x text-orange mb-3"></i>
+          <h5>دفتر مرکزي</h5>
+          <p>دفتر ما در قلب شهر واقع شده تا خدمات حضوري نيز به شما ارائه دهد.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact-form" class="container py-5">
+    <h2 class="section-title">فرم تماس با ما</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <form class="contact-form">
+          <div class="mb-3">
+            <label class="form-label">نام شما</label>
+            <input type="text" class="form-control" placeholder="نام خود را وارد کنيد">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">ايميل</label>
+            <input type="email" class="form-control" placeholder="ايميل شما">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">موضوع پيام</label>
+            <input type="text" class="form-control" placeholder="موضوع پيام شما چيست؟">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">پيام شما</label>
+            <textarea class="form-control" rows="5" placeholder="پيام خود را بنويسيد..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit">ارسال پيام</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5">
+    <h2 class="section-title">راه‌هاي ديگر ارتباطي</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="info-box text-center">
+          <i class="fa-solid fa-phone fa-2x text-orange mb-3"></i>
+          <h5>شماره تماس</h5>
+          <p>........</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="info-box text-center">
+          <i class="fa-solid fa-envelope fa-2x text-orange mb-3"></i>
+          <h5>ايميل پشتيباني</h5>
+          <p>.........</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="info-box text-center">
+          <i class="fa-solid fa-map-marker-alt fa-2x text-orange mb-3"></i>
+          <h5>آدرس ما</h5>
+          <p>.........</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5 text-center">
+    <h2 class="section-title">در شبکه‌هاي اجتماعي همراه ما باشيد</h2>
+    <div class="social-icons mt-3">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+
+  <section class="container py-5 text-center">
+    <h2 class="section-title">ما منتظر شنيدن صداي شما هستيم!</h2>
+    <p class="mb-4">هر سوال، نظر يا پيشنهادي داريد — همين حالا با ما در تماس باشيد ❤️</p>
+    <a href="#contact-form" class="btn btn-orange btn-lg">شروع گفتگو</a>
+  </section>
+
+
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

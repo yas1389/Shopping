@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart store</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e3e62;
+            /* font-family: "Vazirmatn", sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            direction: rtl;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin: 40px 0px;
+            font-weight: bold;
+        }
+
+        .product-card {
+            background-color: #0b192c;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: #fff;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background-color: #1e3e62;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff6500;
+        }
+
+        .discount-badge {
+            background-color: #ff6500;
+            color: #fff;
+            font-weight: bold;
+            padding: 6px 10px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #ccc;
+            margin-left: 10px;
+        }
+
+        .new-price {
+            color: #ff6500;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+
+
+        .navbar {
+            background: #ff6500 !important;
+            box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-shopping-bag me-2"></i>
+                اسمارت‌استور
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">محصولات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+                    </li>
+                    <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <h2>لوازم‌جانبي</h2>
+
+
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/1.webp" class="card-img-top"
+                        alt=" Anker PowerCore 26800mAh Power Bank">
+                    <div class="card-body">
+                        <h5 class="card-title"> Anker PowerCore 26800mAh Power Bank</h5>
+                        <p class="card-text">پاوربانک با ظرفيت بالا و شارژ هم‌زمان سه دستگاه.</p>
+                        <div class="price">
+                            <span class="old-price"> 8 ميليون تومان</span>
+                            <span class="new-price">6.4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/2.jpg" class="card-img-top" alt="Samsung 45W Super Fast Charger">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung 45W Super Fast Charger</h5>
+                        <p class="card-text">شارژ سريع و ايمن براي سري S و Tab سامسونگ.</p>
+                        <div class="price">
+                            <span class="old-price">5 ميليون تومان </span>
+                            <span class="new-price">4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/3.jpg" class="card-img-top" alt=" Logitech MX Master 3S Mouse">
+                    <div class="card-body">
+                        <h5 class="card-title"> Logitech MX Master 3S Mouse</h5>
+                        <p class="card-text">ماوس بي‌سيم حرفه‌اي با دقت بالا و قابليت اتصال به ۳ دستگاه.</p>
+                        <div class="price">
+                            <span class="old-price"> 12 ميليون تومان</span>
+                            <span class="new-price">9.6 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/4.jpg" class="card-img-top" alt=" Razer BlackWidow V4 Pro Keyboard">
+                    <div class="card-body">
+                        <h5 class="card-title"> Razer BlackWidow V4 Pro Keyboard</h5>
+                        <p class="card-text">کيبورد مکانيکي مخصوص گيمينگ با نورپردازي RGB.</p>
+                        <div class="price">
+                            <span class="old-price"> 25 ميليون تومان</span>
+                            <span class="new-price">20 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/5.jpg" class="card-img-top" alt="Apple Magic Keyboard for iPad Pro">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple Magic Keyboard for iPad Pro</h5>
+                        <p class="card-text">کيبورد مغناطيسي با تاچ‌پد مخصوص آيپد.</p>
+                        <div class="price">
+                            <span class="old-price"> 28 ميليون تومان</span>
+                            <span class="new-price"> 22.4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/6.jpeg" class="card-img-top" alt=" Samsung Galaxy Buds3 Pro">
+                    <div class="card-body">
+                        <h5 class="card-title"> Samsung Galaxy Buds3 Pro</h5>
+                        <p class="card-text">صداي شفاف با نويز کنسلينگ پيشرفته و طراحي ارگونوميک.</p>
+                        <div class="price">
+                            <span class="old-price">20 ميليون تومان </span>
+                            <span class="new-price">16 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/7.jpg" class="card-img-top" alt=" Apple AirPods Max">
+                    <div class="card-body">
+                        <h5 class="card-title"> Apple AirPods Max</h5>
+                        <p class="card-text">هدفون بي‌سيم با صداي فضايي و حذف نويز فعال.</p>
+                        <div class="price">
+                            <span class="old-price"> 45 ميليون تومان</span>
+                            <span class="new-price"> 36 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/8.jpeg" class="card-img-top" alt="Sony WH-1000XM5 Headphones">
+                    <div class="card-body">
+                        <h5 class="card-title">Sony WH-1000XM5 Headphones</h5>
+                        <p class="card-text">جز هدفون‌هاي خوب دنيا با نويز کنسلينگ خوب.</p>
+                        <div class="price">
+                            <span class="old-price">40 ميليون تومان </span>
+                            <span class="new-price">32 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/9.jpg" class="card-img-top" alt=" Apple Pencil (2nd Generation)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Apple Pencil (2nd Generation)</h5>
+                        <p class="card-text">قلم دقيق مخصوص آيپدهاي نسل جديد.</p>
+                        <div class="price">
+                            <span class="old-price">18 ميليون تومان</span>
+                            <span class="new-price"> 14.4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/10.jpg" class="card-img-top" alt="Logitech Brio 4K Webcam">
+                    <div class="card-body">
+                        <h5 class="card-title">Logitech Brio 4K Webcam</h5>
+                        <p class="card-text">وب‌کم ۴K با فوکوس خودکار و صداي استريو.</p>
+                        <div class="price">
+                            <span class="old-price">16 ميليون تومان</span>
+                            <span class="new-price"> 12.8 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/11.jpg" class="card-img-top" alt=" Baseus 8-in-1 USB-C Hub">
+                    <div class="card-body">
+                        <h5 class="card-title"> Baseus 8-in-1 USB-C Hub</h5>
+                        <p class="card-text">هاب چندمنظوره با پورت HDMI و USB3.</p>
+                        <div class="price">
+                            <span class="old-price"> 9 ميليون تومان</span>
+                            <span class="new-price"> 7.2 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/12.jpg" class="card-img-top" alt="Apple MagSafe Duo Charger">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple MagSafe Duo Charger</h5>
+                        <p class="card-text">شارژر بي‌سيم هم‌زمان براي آيفون و اپل‌واچ.</p>
+                        <div class="price">
+                            <span class="old-price">22 ميليون تومان</span>
+                            <span class="new-price">17.6 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/13.webp" class="card-img-top" alt=" JBL Charge 5 Bluetooth Speaker">
+                    <div class="card-body">
+                        <h5 class="card-title"> JBL Charge 5 Bluetooth Speaker</h5>
+                        <p class="card-text">اسپيکري خوب و قابل‌حمل با صداي قدرتمند و ضدآب.</p>
+                        <div class="price">
+                            <span class="old-price">15 ميليون تومان</span>
+                            <span class="new-price">12 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/14.webp" class="card-img-top"
+                        alt=" Razer Kraken V3 HyperSense Headset">
+                    <div class="card-body">
+                        <h5 class="card-title"> Razer Kraken V3 HyperSense Headset</h5>
+                        <p class="card-text">هدست گيمينگ با ويبره واقعي و صداي ۷.۱ کاناله.</p>
+                        <div class="price">
+                            <span class="old-price"> 18 ميليون تومان</span>
+                            <span class="new-price"> 14.4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/15.jpg" class="card-img-top"
+                        alt="Samsung 1TB Portable SSD T7 Shield">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung 1TB Portable SSD T7 Shield</h5>
+                        <p class="card-text"> محبوب و با حافظه SSD قابل‌حمل با سرعت بالا و ضدضربه.</p>
+                        <div class="price">
+                            <span class="old-price">25 ميليون تومان</span>
+                            <span class="new-price">20 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/16.jpg" class="card-img-top"
+                        alt="Samsung Wireless Keyboard Trio 500">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Wireless Keyboard Trio 500</h5>
+                        <p class="card-text">کيبورد بي‌سيم جمع‌وجور با قابليت اتصال به چند دستگاه.</p>
+                        <div class="price">
+                            <span class="old-price">7 ميليون تومان</span>
+                            <span class="new-price">5.6 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/17.jpeg" class="card-img-top"
+                        alt=" Logitech G Pro X Wireless Headset">
+                    <div class="card-body">
+                        <h5 class="card-title"> Logitech G Pro X Wireless Headset</h5>
+                        <p class="card-text">هدست گيمينگ حرفه‌اي با ميکروفون قابل‌جدا شدن.</p>
+                        <div class="price">
+                            <span class="old-price"> 28 ميليون تومان</span>
+                            <span class="new-price">22.4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/18.jpg" class="card-img-top" alt="Apple AirTag (4-Pack)">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple AirTag (4-Pack)</h5>
+                        <p class="card-text"> بسيار محبوب و ردياب هوشمند وسايل با دقت بالا.</p>
+                        <br>
+                        <div class="price">
+                            <span class="old-price">12 ميليون تومان</span>
+                            <span class="new-price">9.6 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/19.jpg" class="card-img-top"
+                        alt="Samsung Smart Keyboard for Tab S9 Ultra">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Smart Keyboard for Tab S9 Ultra</h5>
+                        <p class="card-text">جز محبوب‌ها، کيبورد اصلي تبلت S9 Ultra با نور پس‌زمينه.</p>
+                        <div class="price">
+                            <span class="old-price">20 ميليون تومان</span>
+                            <span class="new-price">16 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/accessories/20.jpg" class="card-img-top"
+                        alt="HyperDrive 6-in-1 USB-C Dock for MacBook">
+                    <div class="card-body">
+                        <h5 class="card-title">HyperDrive 6-in-1 USB-C Dock for MacBook</h5>
+                        <p class="card-text">داک حرفه‌اي مخصوص مک‌بوک با خروجي‌هاي متعدد.</p>
+                        <div class="price">
+                            <span class="old-price">18 ميليون تومان</span>
+                            <span class="new-price"> 14.4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

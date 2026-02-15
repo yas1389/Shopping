@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart store</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e3e62;
+            /* font-family: "Vazirmatn", sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            direction: rtl;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin: 40px 0px;
+            font-weight: bold;
+        }
+
+        .product-card {
+            background-color: #0b192c;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: #fff;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background-color: #1e3e62;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #ff6500;
+        }
+
+        .discount-badge {
+            background-color: #ff6500;
+            color: #fff;
+            font-weight: bold;
+            padding: 6px 10px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #ccc;
+            margin-left: 10px;
+        }
+
+        .new-price {
+            color: #ff6500;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+
+
+        .navbar {
+            background: #ff6500 !important;
+            box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-shopping-bag me-2"></i>
+                اسمارت‌استور
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">محصولات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+                    </li>
+                    <a class="nav-link" style="padding-right: 3px;" href="#cart"> سبد خريد </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container py-5">
+        <h2>تبلت ها</h2>
+
+
+        <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/1.jpg" class="card-img-top" alt=" Apple iPad Pro M4 (13-inch, 2024)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Apple iPad Pro M4 (13-inch, 2024)</h5>
+                        <p class="card-text">جديدترين نسل آيپد با تراشه M4 و نمايشگر Ultra Retina XDR.</p>
+                        <div class="price">
+                            <span class="old-price"> 110 ميليون تومان </span>
+                            <span class="new-price">88 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/2.jpg" class="card-img-top" alt="Samsung Galaxy Tab S9 Ultra 5G (14.6”)">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Tab S9 Ultra 5G (14.6”)</h5>
+                        <p class="card-text">صفحه AMOLED فوق‌العاده، ضدآب، با قلم S-Pen و رم ۱۲ گيگ.</p>
+                        <div class="price">
+                            <span class="old-price">95 ميليون تومان</span>
+                            <span class="new-price">76 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/3.jpg" class="card-img-top" alt="Apple iPad Pro M3 (Concept Edition)">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple iPad Pro M3 (Concept Edition)</h5>
+                        <p class="card-text">نسخه کانسپت مخصوص طراحان، قدرت گرافيکي فوق‌العاده.</p>
+                        <div class="price">
+                            <span class="old-price"> 100 ميليون تومان</span>
+                            <span class="new-price">80 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/4.webp" class="card-img-top" alt=" Huawei MatePad Pro 13.2 (2024)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Huawei MatePad Pro 13.2 (2024)</h5>
+                        <p class="card-text">صفحه OLED بزرگ، طراحي ظريف، شارژ سريع ۸۸ وات.</p>
+                        <div class="price">
+                            <span class="old-price"> 75 ميليون تومان </span>
+                            <span class="new-price"> 60 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/5.jpeg" class="card-img-top" alt=" Samsung Galaxy Tab S9+ (12.4”)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Samsung Galaxy Tab S9+ (12.4”)</h5>
+                        <p class="card-text">نمايشگر Super AMOLED، بدنه فلزي.</p>
+                        <div class="price">
+                            <span class="old-price"> 70 ميليون تومان </span>
+                            <span class="new-price"> 56 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/6.jpeg" class="card-img-top" alt=" Apple iPad Air M2 (11-inch)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Apple iPad Air M2 (11-inch)</h5>
+                        <p class="card-text">قدرت بالا در بدنه سبک، مناسب دانشجويان طراحي.</p>
+                        <div class="price">
+                            <span class="old-price">60 ميليون تومان</span>
+                            <span class="new-price">48 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/7.jpg" class="card-img-top" alt=" Microsoft Surface Pro 9 (Intel i7)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Microsoft Surface Pro 9 (Intel i7)</h5>
+                        <p class="card-text">مخصوص کارهاي اداري و گرافيکي.</p>
+                        <div class="price">
+                            <span class="old-price">120 ميليون تومان </span>
+                            <span class="new-price"> 96 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/8.jpg" class="card-img-top" alt=" Lenovo Tab Extreme (14.5”)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Lenovo Tab Extreme (14.5”)</h5>
+                        <p class="card-text">نمايشگر OLED، صداي JBL، رم ۱۲ گيگ و قلم دقيق.</p>
+                        <div class="price">
+                            <span class="old-price">65 ميليون تومان</span>
+                            <span class="new-price">52 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/9.jpeg" class="card-img-top" alt=" Xiaomi Pad 6 Pro (12.4”)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Xiaomi Pad 6 Pro (12.4”)</h5>
+                        <p class="card-text">عملکرد سريع با Snapdragon 8+ Gen1، شارژ ۶۷ وات.</p>
+                        <div class="price">
+                            <span class="old-price"> 55 ميليون تومان </span>
+                            <span class="new-price"> 44 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/10.png" class="card-img-top" alt="Samsung Galaxy Tab S9 FE+">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Tab S9 FE+</h5>
+                        <p class="card-text">پشتيباني از S-Pen، طراحي پريميوم با بدنه ضدآب.</p>
+                        <div class="price">
+                            <span class="old-price"> 45 ميليون تومان </span>
+                            <span class="new-price">36 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/11.webp" class="card-img-top" alt="Apple iPad Mini 6 (A15 Bionic)">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple iPad Mini 6 (A15 Bionic)</h5>
+                        <p class="card-text">کوچک ولي فوق‌العاده قوي، مناسب پزشکان و طراحان.</p>
+                        <div class="price">
+                            <span class="old-price"> 50 ميليون تومان</span>
+                            <span class="new-price"> 40 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/12.jpg" class="card-img-top" alt="Huawei MatePad 13.2 Pro Edition">
+                    <div class="card-body">
+                        <h5 class="card-title">Huawei MatePad 13.2 Pro Edition</h5>
+                        <p class="card-text">نسخه حرفه‌اي با نمايشگر OLED، قلم نسل دوم.</p>
+                        <div class="price">
+                            <span class="old-price"> 68 ميليون تومان</span>
+                            <span class="new-price">54.4 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/13.jpg" class="card-img-top" alt="Lenovo Yoga Tab 13 (JBL Audio)">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo Yoga Tab 13 (JBL Audio)</h5>
+                        <p class="card-text">داراي پايه فلزي، صفحه ۱۳ اينچ، مخصوص تماشاي فيلم.</p>
+                        <div class="price">
+                            <span class="old-price"> 40 ميليون تومان </span>
+                            <span class="new-price">32 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/14.jpeg" class="card-img-top"
+                        alt="Samsung Galaxy Tab S9 Enterprise Edition">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy Tab S9 Enterprise Edition</h5>
+                        <p class="card-text">نسخه مخصوص کسب‌وکارها، امنيت و سرعت بالا.</p>
+                        <div class="price">
+                            <span class="old-price">85 ميليون تومان</span>
+                            <span class="new-price"> 68 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/15.jpg" class="card-img-top" alt=" Samsung Galaxy Tab S8 Ultra (2023)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Samsung Galaxy Tab S8 Ultra (2023)</h5>
+                        <p class="card-text">نمايشگر غول‌پيکر، باتري قوي، مخصوص کارهاي مولتي‌تسک.</p>
+                        <div class="price">
+                            <span class="old-price">60 ميليون تومان</span>
+                            <span class="new-price">48 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/16.jpg" class="card-img-top" alt=" Huawei MatePad Paper 2 (E-Ink Pro)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Huawei MatePad Paper 2 (E-Ink Pro)</h5>
+                        <p class="card-text">صفحه جوهري براي نويسندگان و مطالعه حرفه‌اي.</p>
+                        <div class="price">
+                            <span class="old-price"> 45 ميليون تومان</span>
+                            <span class="new-price">36 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/17.jpg" class="card-img-top" alt=" Microsoft Surface Pro X (SQ2)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Microsoft Surface Pro X (SQ2)</h5>
+                        <p class="card-text">طراحي ظريف، عمر باتري عالي، سيستم‌عامل ويندوز ARM.</p>
+                        <div class="price">
+                            <span class="old-price"> 90 ميليون تومان</span>
+                            <span class="new-price"> 72 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/18.jpeg" class="card-img-top" alt=" Apple iPad Pro M2 (12.9 inch)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Apple iPad Pro M2 (12.9 inch)</h5>
+                        <p class="card-text">تجربه بي‌رقيب و عالي در طراحي، ويرايش و گرافيک.</p>
+                        <div class="price">
+                            <span class="old-price"> 85 ميليون تومان</span>
+                            <span class="new-price"> 68 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/19.jpeg" class="card-img-top" alt=" Apple iPad Pro M2 (11-inch)">
+                    <div class="card-body">
+                        <h5 class="card-title"> Apple iPad Pro M2 (11-inch)</h5>
+                        <p class="card-text">بهترين در جاي خودش با قدرت M2 در اندازه جمع‌وجور، صفحه ۱۲۰هرتز.</p>
+                        <div class="price">
+                            <span class="old-price"> 75 ميليون تومان</span>
+                            <span class="new-price"> 60 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card product-card position-relative">
+                    <span class="discount-badge">تخفيف 20%</span>
+                    <img src="./assets/tablet/20.jpg" class="card-img-top" alt="Lenovo Tab P12 Pro (5G)">
+                    <div class="card-body">
+                        <h5 class="card-title">Lenovo Tab P12 Pro (5G)</h5>
+                        <p class="card-text">اتصال ۵G، صفحه AMOLED و سازگار با قلم Lenovo Precision.</p>
+                        <div class="price">
+                            <span class="old-price"> 55 ميليون تومان</span>
+                            <span class="new-price">44 ميليون تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

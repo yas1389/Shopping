@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smart store</title>
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0b192c;
+      color: #fff;
+      /* font-family: 'Vazirmatn', sans-serif; */
+      text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    h1 {
+      color: #ff6500;
+      margin-bottom: 50px;
+    }
+
+    .card-compare {
+      background: #1e3e62;
+      border: 2px solid #ff6500;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card-compare:hover {
+      transform: scale(1.03);
+      background: #162b4b;
+    }
+
+    .product {
+      border-left: 1px solid #ff6500;
+      padding-left: 15px;
+      text-align: right;
+    }
+
+    .product:first-child {
+      border-left: none;
+      padding-left: 0px;
+    }
+
+    .product h3 {
+      color: #ff6500;
+      margin-bottom: 10px;
+    }
+
+    .feature-list {
+      text-align: right;
+      padding-right: 0px;
+      margin-bottom: 10px;
+    }
+
+    .feature-list li {
+      padding: 3px 0px;
+      border-bottom: 1px solid #ff6500;
+    }
+
+    @media (max-width: 767px) {
+      .d-md-flex {
+        flex-direction: column !important;
+      }
+
+      .product {
+        border-left: none;
+        padding-left: 0px;
+        margin-top: 20px;
+      }
+    }
+
+
+    .navbar {
+      background: #ff6500 !important;
+      box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: white !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: white !important;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <i class="fas fa-shopping-bag me-2"></i>
+        اسمارت‌استور
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">خانه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">محصولات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+          </li>
+          <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container py-5 mt-5">
+    <h1>مقايسه محصولات پرطرفدار</h1>
+
+
+
+    <div class="w-50 d-inline-block">
+      <div class="card-compare d-md-flex">
+
+
+        <div class="product flex-fill">
+          <h3>MacBook Pro 16”</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده M2 Pro</li>
+            <li>صفحه نمايش 16 اينچ Retina</li>
+            <li>حافظه 1TB SSD</li>
+            <li>رم 32GB</li>
+            <li>باتري 21 ساعت</li>
+            <li>وزن 2 کيلوگرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>Dell XPS 15</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i9</li>
+            <li>صفحه نمايش 15.6 اينچ OLED</li>
+            <li>حافظه 1TB SSD</li>
+            <li>رم 32GB</li>
+            <li>باتري 14 ساعت</li>
+            <li>وزن 1.9 کيلوگرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>iPhone 15 Pro</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش 6.1 اينچ</li>
+            <li>دوربين 48MP</li>
+            <li>حافظه 512GB</li>
+            <li>پردازنده A17 Bionic</li>
+            <li>باتري 20 ساعت</li>
+            <li>وزن 187 گرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>Samsung Galaxy S23 Ultra</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش 6.8 اينچ Dynamic AMOLED</li>
+            <li>دوربين 200MP</li>
+            <li>حافظه 512GB</li>
+            <li>پردازنده Snapdragon 8 Gen 2</li>
+            <li>باتري 22 ساعت</li>
+            <li>وزن 234 گرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>iPad Pro 12.9”</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش Liquid Retina XDR</li>
+            <li>پردازنده M2</li>
+            <li>حافظه 1TB</li>
+            <li>رم 16GB</li>
+            <li>باتري 10 ساعت</li>
+            <li>وزن 682 گرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>Samsung Galaxy Tab S9+</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش Super AMOLED 12.4"</li>
+            <li>پردازنده Snapdragon 8 Gen 2</li>
+            <li>حافظه 1TB</li>
+            <li>رم 16GB</li>
+            <li>باتري 11 ساعت</li>
+            <li>وزن 575 گرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>ASUS ROG Strix G15</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i9</li>
+            <li>کارت گرافيک RTX 4070</li>
+            <li>حافظه 1TB SSD</li>
+            <li>رم 32GB</li>
+            <li>باتري 8 ساعت</li>
+            <li>وزن 2.4 کيلوگرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>MSI Raider 15</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i9</li>
+            <li>کارت گرافيک RTXTX 4070</li>
+            <li>حافظه 1TB SSD</li>
+            <li>رم 32GB</li>
+            <li>باتري 7.5 ساعت</li>
+            <li>وزن 2.3 کيلوگرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>MacBook Air M2</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده M2</li>
+            <li>صفحه نمايش 13.6 اينچ Retina</li>
+            <li>حافظه 512GB SSD</li>
+            <li>رم 16GB</li>
+            <li>باتري 18 ساعت</li>
+            <li>وزن 1.2 کيلوگرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>Lenovo Yoga 9i</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i7</li>
+            <li>صفحه نمايش 14 اينچ 4K OLED</li>
+            <li>حافظه 1TB SSD</li>
+            <li>رم 16GB</li>
+            <li>باتري 15 ساعت</li>
+            <li>وزن 1.4 کيلوگرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>iPhone 15 Plus</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش 6.7 اينچ</li>
+            <li>دوربين 48MP</li>
+            <li>حافظه 256GB</li>
+            <li>پردازنده A17 Bionic</li>
+            <li>باتري 22 ساعت</li>
+            <li>وزن 201 گرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>Samsung Galaxy S23+</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش 6.6 اينچ Dynamic AMOLED</li>
+            <li>دوربين 200MP</li>
+            <li>حافظه 256GB</li>
+            <li>پردازنده Snapdragon 8 Gen 2</li>
+            <li>باتري 23 ساعت</li>
+            <li>وزن 234 گرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>iPad Air 5</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش 10.9 اينچ Liquid Retina</li>
+            <li>پردازنده M1</li>
+            <li>حافظه 256GB</li>
+            <li>رم 8GB</li>
+            <li>باتري 10 ساعت</li>
+            <li>وزن 461 گرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>Samsung Galaxy Tab S8+</h3>
+          <ul class="feature-list list-unstyled">
+            <li>صفحه نمايش 12.4 اينچ Super AMOLED</li>
+            <li>پردازنده Snapdragon 8 Gen 1</li>
+            <li>حافظه 256GB</li>
+            <li>رم 8GB</li>
+            <li>باتري 12 ساعت</li>
+            <li>وزن 567 گرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>ASUS ZenBook 14</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i7</li>
+            <li>صفحه نمايش 14 اينچ OLED</li>
+            <li>حافظه 512GB SSD</li>
+            <li>رم 16GB</li>
+            <li>باتري 12 ساعت</li>
+            <li>وزن 1.2 کيلوگرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>HP Spectre x360</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i7</li>
+            <li>صفحه نمايش 13.5 اينچ OLED</li>
+            <li>حافظه 512GB SSD</li>
+            <li>رم 16GB</li>
+            <li>باتري 13 ساعت</li>
+            <li>وزن 1.3 کيلوگرم</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card-compare d-md-flex">
+        <div class="product flex-fill">
+          <h3>Razer Blade 15</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i9</li>
+            <li>کارت گرافيک RTX 4070</li>
+            <li>حافظه 1TB SSD</li>
+            <li>رم 32GB</li>
+            <li>باتري 7 ساعت</li>
+            <li>وزن 2.1 کيلوگرم</li>
+          </ul>
+        </div>
+        <div class="product flex-fill">
+          <h3>Alienware X15</h3>
+          <ul class="feature-list list-unstyled">
+            <li>پردازنده Intel i9</li>
+            <li>کارت گرافيک RTX 4070</li>
+            <li>حافظه 1TB SSD</li>
+            <li>رم 32GB</li>
+            <li>باتري 6.5 ساعت</li>
+            <li>وزن 2.2 کيلوگرم</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

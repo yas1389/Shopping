@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smart store</title>
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #1e3e62;
+      color: #fff;
+      font-family: 'Vazirmatn', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    h1 {
+      color: #ff6500;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .accordion-button {
+      background-color: #0b192c;
+      color: #ff6500;
+      font-weight: bold;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #ff6500;
+      color: #0b192c;
+    }
+
+    .accordion-body {
+      background-color: #162b4b;
+      color: #fff;
+    }
+
+    .accordion-item {
+      border: 2px solid #ff6500;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+
+
+    .navbar {
+      background: #ff6500 !important;
+      box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: white !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: white !important;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <i class="fas fa-shopping-bag me-2"></i>
+        اسمارت‌استور
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">خانه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">محصولات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+          </li>
+          <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h1>سوالات متداول</h1>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- سوالات ۱۵ تاي -->
+      <div class="w-50 mx-auto">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse1">
+              چگونه مي‌توانم محصول مورد نظر خود را سفارش دهم؟
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              براي سفارش محصول، کافيست روي دکمه "افزودن به سبد خريد" کليک کنيد و مراحل پرداخت را انجام دهيد.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse2">
+              روش‌هاي پرداخت پشتيباني شده کدامند؟
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              تمام پرداخت‌هاي آنلاين شامل کارت‌هاي بانکي عضو شتاب و درگاه‌هاي امن اينترنتي پشتيباني مي‌شوند.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse3">
+              آيا امکان بازگشت محصول وجود دارد؟
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بله، در صورت عدم رضايت تا ۷ روز امکان بازگشت محصول وجود دارد.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq4">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse4">
+              محصولات شما چه گارانتي‌اي دارند؟
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              تمام محصولات داراي گارانتي رسمي برند مربوطه هستند و خدمات پس از فروش ارائه مي‌شود.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq5">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse5">
+              ارسال سفارش‌ها چقدر زمان مي‌برد؟
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              سفارش‌ها معمولاً بين ۱ تا ۳ روز کاري بسته به منطقه تحويل مي‌شوند.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq6">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse6">
+              چگونه ميتوانم با پشتيباني تماس بگيرم؟
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              از طريق چت آنلاين، تماس تلفني يا ايميل مي‌توانيد با تيم پشتيباني در ارتباط باشيد.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq7">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse7">
+              آيا محصولات اصلي هستند؟
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بله، تمام محصولات ارائه شده ۱۰۰٪ اصل و از برند معتبر هستند.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq8">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse8">
+              آيا تخفيف يا کد تخفيف ارائه مي‌دهيد؟
+            </button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بله، تخفيف‌ها در مناسبت‌هاي مختلف و براي اعضاي خبرنامه ارائه مي‌شوند.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq9">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse9">
+              آيا خريد مهمان امکان‌پذير است؟
+            </button>
+          </h2>
+          <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بله، بدون ثبت نام مي‌توانيد خريد کنيد، ولي با ثبت نام مزاياي بيشتري دريافت مي‌کنيد.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq10">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse10"">
+              آيا اطلاعات شخصي من امن است؟
+            </button>
+          </h2>
+          <div id="collapse10" class="accordion-collapse collapse""
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بله، تمام اطلاعات شما با استانداردهاي امنيتي رمزگذاري مي‌شوند و محرمانه باقي مي‌مانند.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq11">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse11"">
+              چگونه مي‌توانم سفارش خود را پيگيري کنم؟
+            </button>
+          </h2>
+          <div id="collapse11" class="accordion-collapse collapse""
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              پس از ثبت سفارش، کد رهگيري به ايميل شما ارسال مي‌شود و از طريق صفحه سفارشات قابل پيگيري است.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq12">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse12"">
+              آيا امکان خريد عمده وجود دارد؟
+            </button>
+          </h2>
+          <div id="collapse12" class="accordion-collapse collapse""
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بله، براي خريد عمده با تيم فروش تماس بگيريد تا شرايط ويژه ارائه شود.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq13">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse13"">
+              آيا محصولات شامل لوازم جانبي هستند؟
+            </button>
+          </h2>
+          <div id="collapse13" class="accordion-collapse collapse""
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بسته به نوع محصول، ممکن است لوازم جانبي شامل کابل، شارژر يا کيف ارائه شود.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq14">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse14"">
+              آيا امکان تغير آدرس پس از ثبت سفارش وجود دارد؟
+            </button>
+          </h2>
+          <div id="collapse14" class="accordion-collapse collapse""
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              تا قبل از ارسال محصول، مي‌توانيد آدرس تحويل را از طريق پشتيباني تغير دهيد.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq15">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#collapse15"">
+              آيا محصولات داراي ضمانت تعويض هستند؟
+            </button>
+          </h2>
+          <div id="collapse15" class="accordion-collapse collapse""
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              بله، در صورت وجود مشکل فني، محصولات داراي ضمانت تعويض يا تعمير رسمي هستند.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

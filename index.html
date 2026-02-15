@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart store</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+
+
+
+    <style>
+
+        body {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #B5A8D5 0%, #7A73D1 100%);
+            min-height: 100vh;
+            /* font-family: "Vazirmatn",sans-serif; */
+   
+    /* font-family: 'Katibeh', cursive; */
+    font-weight: 300; /* کمتر توپر */
+
+
+
+
+
+
+
+        }
+        
+        .navbar {
+            background: #ff6500 !important;
+            box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
+        .hero-section {
+            /* background: linear-gradient(135deg, #211C84 0%, #4D55CC 50%, #7A73D1 100%); */
+            padding: 120px 0 80px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            background-color: #1e3e62;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+            }
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn-custom {
+            background-color: #ff6500;
+            /* background: linear-gradient(45deg, #B5A8D5, #7A73D1); */
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 50px;
+            color: #211C84;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(181, 168, 213, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(181, 168, 213, 0.4);
+            color: #211C84;
+        }
+
+        .features-section {
+            padding: 80px 0;
+            background: #0b192c;
+             
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(33, 28, 132, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            height: 100%;font-family: 'Lalezar', cursive;
+    font-weight: 400;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(33, 28, 132, 0.15);
+            border-color: #B5A8D5;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            /* background: linear-gradient(135deg, #7A73D1, #4D55CC); */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            color: white;
+            background-color: #9EC6F3;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #211C84;
+            margin-bottom: 15px;
+        }
+
+        .feature-text {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .products-section {
+            padding: 80px 0;
+            background-color: #0b192c;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(33, 28, 132, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(33, 28, 132, 0.15);
+        }
+
+        .product-image {
+            height: 200px;
+            /* background: linear-gradient(135deg, #B5A8D5, #7A73D1); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            background-color: #BDDDE4;
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #211C84;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #4D55CC;
+            margin-bottom: 15px;
+        }
+
+        .btn-product {
+            background-color: #ff6500;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-product:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(77, 85, 204, 0.3);
+            color: white;
+        }
+
+        .stats-section {
+            padding: 60px 0;
+            background-color: #1e3e62;
+            color: #211C84;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .footer {
+            background: #0b192c;
+            color: white;
+            padding: 50px 0 30px;
+        }
+
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff6500;
+        }
+
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #B5A8D5;
+            padding-right: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+
+
+        .hero-icon {
+            font-size: 15rem;
+            opacity: 0.3;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-icon {
+                font-size: 8rem;
+            }
+        }
+
+       
+    </style>
+     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-shopping-bag me-2"></i>
+                اسمارت‌استور
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./products.html">محصولات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+                    </li>
+                    <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">بهترين محصولات ديجيتال</h1>
+                    <p class="hero-subtitle">
+                        با کيفيت بالا و قيمت مناسب، تجربه خريد آنلاين فوق‌العاده‌اي داشته باشيد
+                    </p>
+                    <a href="./products.html" class="btn-custom" style="color: white;">
+                        <i class="fas fa-rocket me-2"></i>
+                        شروع خريد
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <!-- <div class="hero-icon"> -->
+                    <!-- <i class="fas fa-mobile-alt"></i> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features-section">
+
+        <div class="container">
+            <h2 class="section-title">چرا ديجي شاپ؟</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3 class="feature-title">ارسال سريع</h3>
+                        <p class="feature-text">
+                            ارسال رايگان براي خريدهاي بالاي ۵۰۰ هزار تومان در کمترين زمان ممکن
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">ضمانت کيفيت</h3>
+                        <p class="feature-text">
+                            تمامي محصولات داراي گارانتي معتبر و ضمانت بازگشت وجه
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="feature-title">پشتيباني ۲۴/۷</h3>
+                        <p class="feature-text">
+                            تيم پشتيباني ما آماده پاسخگوي به سوالات شما در تمام ساعات روز
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">محصولات پرفروش</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-laptop me-2"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">لپ تاپ گيمينگ</h4>
+                            <div class="product-price">70,000,000 تومان</div>
+                            <a href="#" class="btn-product">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                افزودن به سبد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">موبايل</h4>
+                            <div class="product-price">76,000,000 تومان</div>
+                            <a href="#" class="btn-product">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                افزودن به سبد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">هدفون بي‌سيم</h4>
+                            <div class="product-price">36,000,000 تومان</div>
+
+                            <a href="#" class="btn-product">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                افزودن به سبد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-title">تبلت حرفه‌اي</h4>
+                            <div class="product-price">80,000,000 تومان</div>
+                            <a href="#" class="btn-product">
+                                <i class="fas fa-cart-plus me-2"></i>
+                                افزودن به سبد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">محصولات متنوع</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">مشتري راضي</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">پشتيباني</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <div class="stat-number">94%</div>
+                        <div class="stat-label">رضايت مشتريان</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">اسمارت‌استور</h5>
+                    <p style="color: white;">بهترين فروشگاه آنلاين محصولات ديجيتال با کيفيت بالا و قيمت مناسب</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">لينک هاي مفيد</h5>
+                    <a href="./about.html" class="footer-link">درباره ما</a>
+                    <a href="./contact.html" class="footer-link">تماس با ما</a>
+                    <a href="./question.html" class="footer-link">سوالات متداول</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">دسته بندي ها</h5>
+
+                    <a href="./laptop.html" class="footer-link">لپ تاپ‌</a>
+                    <a href="./mobile.html" class="footer-link">موبايل</a>
+                    <a href="./tablet.html" class="footer-link">تبلت</a>
+                    <a href="./accessories.html" class="footer-link">لوازم جانبي</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">تماس با ما</h5>
+                    <p style="color: white;"><i class="fas fa-phone me-2"></i></p>
+                    <p style="color: white;"><i class="fas fa-envelope me-2"></i></p>
+                    <p style="color: white;"><i class="fas fa-map-marker-alt me-2"></i></p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.2); margin: 30px 0 20px;">
+        </div>
+    </footer>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

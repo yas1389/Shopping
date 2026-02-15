@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smart store</title>
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <style>
+
+
+    body {
+      background-color: #0b192c;
+      color: #fff;
+      /* font-family: "Lalezar", sans-serif; */
+      font-weight: 400;
+      font-style: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    }
+
+    .section-title {
+      color: #ff6500;
+      font-weight: 800;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .text-orange {
+      color: #ff6500;
+    }
+
+    .card-modern {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 101, 0, 0.3);
+      border-radius: 20px;
+      padding: 20px;
+      transition: all 0.4s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .card-modern:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 10px 30px rgba(255, 101, 0, 0.5);
+    }
+
+    .discount-badge {
+      background-color: #ff6500;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 10px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 0.9rem;
+    }
+
+    .btn-orange {
+      background-color: #ff6500;
+      color: #fff;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-right: 43%;
+    }
+
+    .btn-orange:hover {
+      background-color: #1e3e62;
+      color: #ff6500;
+      border: 1px solid #ff6500;
+    }
+
+    .testimonial {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 10px 0;
+      transition: transform 0.4s ease;
+    }
+
+
+    .testimonial:hover {
+      transform: scale(1.03);
+    }
+
+
+
+    .navbar {
+      background: #ff6500 !important;
+      box-shadow: 0 4px 20px rgba(33, 28, 132, 0.3);
+      margin-bottom: 54px;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: white !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: white !important;
+      transform: translateY(-2px);
+    }
+  </style>
+
+  
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <i class="fas fa-shopping-bag me-2"></i>
+        اسمارت‌استور
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">خانه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">محصولات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">درباره ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-right: 3px;" href="./contact.html">تماس با ما</a>
+          </li>
+          <a class="nav-link" style="padding-right: 3px;" href="./comparison.html">مقايسه محصولات</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <h2 class="section-title mt-5 mb-3">ما کي هستيم؟</h2>
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 mb-4 mb-md-0 mb-3">
+        <img src="./assets/about/about.jpg" class="img-fluid rounded shadow-lg" alt="درباره ما">
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="text-white">ما تيمی هستيم که به آينده ديجيتال ايمان داريم.
+          از سال ۱۴۰۰ با هدف ساده‌تر کردن خريد محصولات ديجيتال،
+          مسير خود را آغاز کرديم. مأموريت ما اين است که بهترين تکنولوژی دنيا
+          را با مناسب‌ترين قيمت و پشتيباني واقعي، به دست کاربران ايراني برسانيم.
+          اينجا فقط يک فروشگاه نيست — اينجا تجربه‌ای از اعتماد، سرعت و کيفيت است.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5">
+    <h2 class="section-title">ماموريت و چشم‌انداز</h2>
+    <div class="row g-4 text-center">
+      <div class="col-12 col-md-4">
+        <div class="card-modern p-4 h-100">
+          <i class="fas fa-bullseye fa-3x text-orange mb-3"></i>
+          <h5 class="text-orange mb-2">ماموريت ما</h5>
+          <p>تسهيل دسترسي به جديدترين فناوری‌ها برای همه افراد، با تجربه خريد آسان و سريع.</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-4">
+        <div class="card-modern p-4 h-100">
+          <i class="fas fa-eye fa-3x text-orange mb-3"></i>
+          <h5 class="text-orange mb-2">چشم‌انداز ما</h5>
+          <p>تبديل شدن به پيشروترين مرجع خريد ديجيتال ايران با بالاترين سطح اعتماد مشتری.</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-4">
+        <div class="card-modern p-4 h-100">
+          <i class="fas fa-lightbulb fa-3x text-orange mb-3"></i>
+          <h5 class="text-orange mb-2">نوآوری</h5>
+          <p>معرفي راهکارهای مدرن و تکنولوژی‌های نوين برای تجربه خريد متفاوت و هوشمند.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="container py-5">
+    <h2 class="section-title">ارزش‌ها و اصول</h2>
+    <div class="row g-4 text-center">
+      <div class="col-12 col-md-3">
+        <div class="card-modern p-4 h-100">
+          <h5 class="text-orange">شفافيت</h5>
+          <p>هر فرآيند و قيمت‌گذاری کاملاً روشن و قابل اعتماد است.</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-3">
+        <div class="card-modern p-4 h-100">
+          <h5 class="text-orange">تعهد</h5>
+          <p>به وعده‌ها و خدمات خود هميشه وفاداريم.</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-3">
+        <div class="card-modern p-4 h-100">
+          <h5 class="text-orange">کيفيت</h5>
+          <p>فقط محصولات اصلی و باکيفيت ارائه مي‌دهيم.</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-3">
+        <div class="card-modern p-4 h-100">
+          <h5 class="text-orange">رضايت مشتری</h5>
+          <p>تمرکز ما بر خوشنودی و تجربه مثبت کاربران است.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="container py-5">
+    <h2 class="section-title text-white">تيم ما</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10">
+        <div class="card-modern p-4 text-center">
+          <p style="line-height: 2; font-size: 1.1rem;">
+            تيم ما متشکل از افراد برتر و با استعداد در زمينه فناوری و تجارت ديجيتال است.
+            هر عضو با تخصص و تجربه منحصر به فرد خود، در کنار ديگران به ارائه بهترين تجربه خريد کمک مي‌کند.
+            ما به پشتيباني بي‌نقص و پاسخگويي سريع به مشتريان افتخار مي‌کنيم، به گونه‌ای که کاربران هميشه احساس امنيت،
+            اعتماد و رضايت کنند.
+            تمام فرآيندهای ما با هدف حفظ کيفيت، سرعت و اعتماد مشتريان طراحی شده است.
+            تيم ما هميشه آماده است تا بهترين راهکارها و خدمات ديجيتال را ارائه دهد.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5">
+
+    <h2 class="section-title">نظرات مشتريان</h2>
+
+    <div class="row g-4 justify-content-center align-items-stretch">
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"خريد از اين فروشگاه تجربه‌ای بي‌نظير بود، ارسال سريع و پشتيباني عالي!"</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"کيفيت محصولات بسيار بالاست و قيمت‌ها مناسب هستند. حتماً توصيه مي‌کنم."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"سايت حرفه‌ای و کاربرپسند، تجربه خريد ديجيتال به معنای واقعي!"</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"پشتيباني سريع و دوستانه، هر سوالي داشتم جواب دادند."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"بهترين تجربه خريد آنلاين ديجيتال، بسيار خوشحالم از خريدم."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"سفارش سريع رسيد و محصول کاملاً مطابق توضيحات بود."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"پشتيباني فوق‌العاده و پاسخگو، هميشه آماده کمک هستند."</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"کيفيت محصولات عالي و قيمت منصفانه، خيلي راضي هستم."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"تجربه خريد ديجيتال حرفه‌ای و سريع، کاملاً راضي‌کننده."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"محصولات اورجينال و پشتيباني عالي، توصيه مي‌کنم."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"ارسال سريع و بسته‌بندی مناسب، تجربه بي‌نظير."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"پشتيباني عالي و پاسخگو، هميشه آماده کمک هستند."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"سايت کاربرپسند و تجربه خريد راحت، خيلي راضي بودم."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"تمام محصولات با کيفيت و تضمين شده بودند، ممنون."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"پشتيباني سريع و حرفه‌ای، هر مشکل را حل کردند."</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="testimonial card-modern h-100 p-4 d-flex flex-column justify-content-between">
+          <p>"کيفيت محصولات عالي و ارسال سريع، خيلي راضي هستم."</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="container py-5">
+    <h2 class="section-title text-white">همين حالا تجربه خريد حرفه‌ای را آغاز کنيد!</h2>
+    <a href="./products.html" class="btn btn-orange btn-lg mt-3">خريد محصولات ما</a>
+  </section>
+
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
